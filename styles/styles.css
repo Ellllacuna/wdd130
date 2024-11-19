@@ -1,10 +1,15 @@
+:root {
+    --padding: 10px;
+    --background-color: #eee;
+}
+
 nav {
     background-color: darkblue;
-    padding:10px;
+    padding:var(--padding);
 }
 
 nav a {
-    color: white;
+    color: var(--background-color);
     display: block;
     padding: 20px;
 }
@@ -22,7 +27,7 @@ main img {
 }
 
 p {
-    padding: 10px;
+    padding: var(--padding);
 }
 
 aside {
@@ -30,7 +35,7 @@ aside {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    background-color: #eee;
+    background-color: var(--background-color);
     color: #333;
     text-align: center;
 }
