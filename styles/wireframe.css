@@ -1,0 +1,23 @@
+:root {
+    --color-1: #335C67;
+    --color-2: #FFF3B0;
+    --color-3: #e09f3e;
+    --color-4: #9e2a2b;
+    --color-5: #540b0e;
+    /*https://coolors.co/palette/335c67-fff3b0-e09f3e-9e2a2b-540b0e*/
+}
+
+/*heading font*/
+h1, h2, h3, h4, h5, h6 { font-family: 'Roboto Mono', monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*placeholer rule for text font*/
+text {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #335C67;
+    --secondary-color: #FFF3B0;
+    --accent1-color: #e09f3e;
+    --accent2-color: #9e2a2b;
+    --accent3-color: #540b0e;
+}
+
+.hero {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    color: white;
+    padding-top: 20%;
+}
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* .hero article::after {
+    content:"";
+    display: table;
+    clear: both;
+} */
+
+.hero h1 {
+    font-family: 'Roboto Mono', monospace;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    background-color: rgba(51, 92, 103, 0.7);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.hero article {
+    background:rgba(84,11,14,0.7);
+    background-size: 100%;
+    bottom: 15%;
+    left: 50%;
+    position: absolute;
+    width: 80%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    padding: 12px;
+    text-align: left;
+   
+}
+
+.hero article img {
+    position: relative;
+    width: 25%;
+    height: auto;
+    float: right;
+}
+
+.hero article p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    font-family: 'Roboto Mono', monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
