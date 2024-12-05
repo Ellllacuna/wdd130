@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
     font-optical-sizing: auto;
 }
 
-p {
+p form{
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -218,4 +218,16 @@ footer p {
     gap: 5px;
     grid-column: 2;
     align-self: center;
+}
+
+button, input, select, textarea {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+textarea {
+    width: 50%;
 }
