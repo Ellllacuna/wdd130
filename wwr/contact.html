@@ -29,50 +29,74 @@
             <a href="contacts.html">Contacts</a>
         </nav>
     </header>
-    <main>
-       <section>
-        <h2>Contact Us</h2>
-        <li>123 Howdareyou ln</li>
-        <li>777-777-7777</li>
-        <li>Email@gmail.com</li>
-        <li>Google map</li>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1208.6067620059778!2d-69.89147864807445!3d43.9062231685828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cad868465fd3843%3A0xdc4e485da4d6e110!2s123%20Medical%20Center%20Dr%2C%20Brunswick%2C%20ME%2004011%2C%20USA!5e0!3m2!1sen!2sie!4v1733184245044!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <main class="about-body">
+        <div class="grid-container">
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <li>123 Howdareyou ln</li>
+                <li>777-777-7777</li>
+                <li>Email@gmail.com</li>
+                <li>Google map</li>
+            </section>
+            <section class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1208.6067620059778!2d-69.89147864807445!3d43.9062231685828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cad868465fd3843%3A0xdc4e485da4d6e110!2s123%20Medical%20Center%20Dr%2C%20Brunswick%2C%20ME%2004011%2C%20USA!5e0!3m2!1sen!2sie!4v1733184245044!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
         </div>
-       </section>
-            <img src="images/happy-employees-1.webp" alt="happy employees 1">
-            <img src="images/happy-employees-2.webp" alt="happy employees 2">
-            <img src="images/happy-employees-3.webp" alt="happy employees 3">
-       <section>
+            <section class="image-row">
+                <img src="images/happy-employees-1.webp" alt="happy employees 1">
+                <img src="images/happy-employees-2.webp" alt="happy employees 2">
+                <img src="images/happy-employees-3.webp" alt="happy employees 3">
+            </section>
+        
+
         <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br>
-            
-            <!-- choose what sort of message -->
-            <p>What is the purpose of the message?</p>
-            <input type="radio" id="general" name="purpose" value="General Inquiry">
-            <label for="general">General Message</label><br>
-            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-            <label for="reservation">Reservation Question</label><br>
-            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-            <label for="suggestion">Website Suggestion</label><br>
-
-            <!-- the message here -->
-            <textarea id="user-message" name="user-message" placeholder="Enter your message here"></textarea><br>
-
-            <!-- newsletter subscription checkbox -->
-            <input type="checkbox" id="subscription" name="subscription" value="newsletter">
-            <label for="subscription">Please subscribe me to the monthly newsletter</label>
-
+            <fieldset>  
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                <div class="form-item column2">
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Feedback</legend>
+                <div class="form-item column1">
+                    <!-- choose what sort of message -->
+                    <div class="radio-message">
+                        <label for="general">What is the purpose of the message?</label> 
+                    </div>
+                        <div class="radio-item">
+                        <input type="radio" id="general" name="purpose" value="General Inquiry">
+                        <label for="general">General Message</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                        <label for="reservation">Reservation Question</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
+                </div>
+                <div class="form-item column1">
+                    <!-- the message here -->
+                    <textarea id="user-message" name="user-message" placeholder="Enter your message here"></textarea><br>
+                </div>
+                <div>
+                    <!-- newsletter subscription checkbox -->
+                    <input type="checkbox" id="subscription" name="subscription" value="newsletter">
+                    <label for="subscription">Please subscribe me to the monthly newsletter</label>
+                </div>
+            </fieldset>
             <!-- submission button -->
-             <br><input type="submit" value="Submit">
-
+            <input type="submit" value="Submit">
         </form>
+
        </section>
     </main>
+
     <footer>
         <p>© 2024 Rafting Momentum | Ellianna Llacuna</p>
         <div class="social">
@@ -85,6 +109,7 @@
             <a href="https://www.instagram.com">
                 <img src="images/instagram-logo.webp" alt="Instagram">
             </a>
+            <a href="https://app.diagrams.net/#LUntitled%20Diagram.drawio#%7B%22pageId%22%3A%22zhMWRyterkIhADdkyoXM%22%7D">Wireframe</a>
         </div>
     </footer>
     
