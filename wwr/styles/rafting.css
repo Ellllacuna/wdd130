@@ -1,11 +1,18 @@
 :root {
-    --primary-color: #335C67;
-    --secondary-color: #FFF3B0;
-    --accent1-color: #e09f3e;
-    --accent2-color: #9e2a2b;
-    --accent3-color: #540b0e;
+    --primary-color: #40916C;
+    --secondary-color: #74C69D;
+    --accent1-color: #95D5B2;
+    --accent2-color: #B7E4C7;
+    --accent3-color: #D8F3DC;
 }
 
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: goldenrod;
+}
 
 .header-grid img {
     grid-column: 1;
@@ -20,7 +27,7 @@
     grid-column: 2 / span 4;
     justify-items: space-between;
     align-items: center;
-    background-color: #e09f3e;
+    background-color: var(--primary-color);
     padding: 10px 20px;
     border-radius: 15px;
 
@@ -31,7 +38,7 @@
     align-items: center;
     justify-items: start;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    background-color: #FFF3B0;
+    background-color: var(--accent3-color);
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 15px;
@@ -67,9 +74,9 @@
 .hero h1 {
     font-family: 'Roboto Mono', monospace;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 50%;
-    background-color: rgba(51, 92, 103, 0.7);
+    background-color: rgba(51, 92, 103, 0.8);
     transform: translate(-50%, -50%);
     width: 100%;
     height: auto;
@@ -78,9 +85,9 @@
 }
 
 .hero article {
-    background:rgba(84,11,14,0.7);
+    background:rgba(64,145,108,0.9);
     background-size: 100%;
-    bottom: 5%;
+    bottom: -10%;
     left: 50%;
     position: absolute;
     width: 80%;
@@ -94,10 +101,13 @@
 
 .hero article img {
     position: relative;
-    width: 25%;
+    width: 30%;
     height: auto;
     float: right;
-    border-radius: 10px
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #fff;
+    background-color: #fff;
 }
 
 .hero article p {
@@ -141,7 +151,7 @@ p form{
 .history {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
+    grid-gap: 10px;
     background-color:var(--accent2-color);
     padding: 10px;
     margin-bottom:15px;
@@ -149,30 +159,39 @@ p form{
 }
 
 .history p {
-    background-color: #FFF3B0;
+    background-color: var(--accent3-color);
     padding: 10px;
     border-radius: 10px;
+    border: 1px solid var(--primary-color);
 }
 
 .history img {
     justify-self: center;
     border-radius: 10px;
+    height: 250px;
+    display: cover;
+    height: auto;
+    align-self: center;
+    border: 1px solid var(--primary-color);
+    padding: 5px;
+    background-color: var(--accent3-color);
 }
 
 .history-title {
     grid-column-start: 1;
     grid-column-end: 4;
     justify-self: center;
-    background-color: #FFF3B0;
+    background-color: var(--accent3-color);
     padding: 10px;
     border-radius: 15px;
+    border: 1px solid var(--primary-color)
 }
 
 .adventure {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: space-between;
-    background-color: #540b0e;
+    background-color: var(--secondary-color);
     padding: 10px;
     gap: 10px;
     margin-bottom: 15px;
@@ -182,11 +201,13 @@ p form{
 .adventure img {
     height: auto;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     object-fit: cover;
     flex-wrap: wrap;
     justify-self: center;
+    /* background-color: var(--accent3-color); */
 }
+
 
 .adventure h2 {
     grid-column: 1/6;
@@ -203,6 +224,7 @@ footer {
     grid-template-columns: 80% 20%;
     justify-items: center;
     align-items: center;
+    
 }
 
 footer p {
@@ -248,6 +270,12 @@ textarea {
     margin: 0.5rem 0;
 }
 
+.column2 input {
+    border-radius: 20px;
+    border: 1px solid #40916C;
+    align-self: right;
+}
+
 input[type="textbox"] {
     justify-self: center;
   
@@ -259,7 +287,7 @@ form {
     padding: 1rem;
     border: 1px solid rgb(0 0 0 / 0.1);
     border-radius: 0.5rem;
-    background-color:#e09f3e80;
+    background-color:var(--accent2-color);
     display: grid;
 }
 
@@ -277,12 +305,12 @@ legend {
     font-size: 1.3em;
 }
 
-label, input, button, select, textarea {
+label, input, button, select, textarea, legend {
     font-family: "Nunito", sans-serif;
 }
 
 label {
-    text-align: right;
+    text-align: left;
     padding-right: 1rem;
 }
 
@@ -302,8 +330,8 @@ button {
     margin: 1rem;
     background-color: navy;
     color: #e09f3e80;
-    border: none;
-    border-radius: .5rem;
+    border: 1px solid #40916C;
+    border-radius: 20px;
     padding: .75rem;
     font-size: 1.2rem;
     justify-self: center;
@@ -370,3 +398,329 @@ button:hover {
     }
 }
 
+
+/* index */
+
+.grid-container-index {
+    display: flex;
+    /* grid-template-columns: 1fr 2fr; */
+    justify-content: space-between;
+    align-items: stretch;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+
+.index-form {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33%;
+    max-width: 50%;
+    /* max-height: 500px; */
+    height: 100%;
+    width: auto;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.index-more {
+    box-sizing: border-box;
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+    background: var(--accent3-color);
+    padding: 10px;
+    overflow: hidden;
+    justify-self: center;
+    align-self: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: auto;
+    padding: 10px;
+    border: 1px solid #7fd1ac;
+    border-radius: 15px;
+}
+
+
+.caption {
+    text-align: left;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.image-item img {
+    max-height: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid #40916C;
+    background: #EEE;
+}
+
+.image-item {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+  }
+  
+
+.index-button {
+    width: 35%;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid #40916C;
+    background: white;
+    justify-self: center;
+}
+
+.index-button:hover {
+    background-color: #74C69D;
+}
+
+.action {
+    background: var(--secondary-color);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.action legend {
+    color: rgb(255, 255, 255);
+}
+
+.action a {
+    text-decoration-color: none;
+}
+
+.action fieldset {
+    border-radius: 15px;
+}
+
+.fieldset-content {
+    background: rgb(250, 251, 235);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.fieldset-content a {
+    text-decoration: underline;
+    color: inherit;
+    font-family: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* trips */
+
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.trip-des {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    background: var(--accent1-color);
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #40916C;
+}
+
+.contact-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--accent2-color);
+    grid-row: 1;
+    grid-column: 2;
+    height: 125px;
+    border-radius: 100px;
+    font-size: 24px;
+    border: 1px solid #74C69D
+}
+
+.contact-link a {
+    color: white;
+}
+
+.contact-link a:hover {
+    color: goldenrod;
+}
+
+.guy-pic {
+    display: flex;
+    background: var(--accent3-color);
+    grid-row: 2 / span 3;
+    grid-column: 2;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    height: 98.5%;
+    overflow: hidden;
+    justify-content: center;
+
+    
+}
+
+.guy-pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid var(--primary-color);
+    object-fit: cover;
+
+}
+
+/* trip descriptions table!!! */
+.trip-des-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image1 {
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 15px;
+}
+
+.image1 img {
+    border-radius: 50%;
+    padding: 10px;
+    background: rgb(226, 226, 226);
+    margin: 5px;
+    width: 100%;
+    min-width: 175px;
+    box-sizing: border-box;
+}
+
+.image1 img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.image2 {
+    grid-column: 1;
+    grid-row: 2; 
+}
+
+.image2 img {
+    border-radius: 50%;
+    padding: 10px;
+    background: rgb(226, 226, 226);
+    margin: 5px;
+    min-width: 175px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.image2 img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.image3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.image3 img {
+    border-radius: 50%;
+    padding: 10px;
+    background: rgb(226, 226, 226);
+    margin: 5px;
+    min-width: 175px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.image3 img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.des1 {
+    grid-column: 2;
+    grid-row: 1;
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+    padding: 10px;
+}
+
+.des2 {
+    grid-column: 2;
+    grid-row: 2;
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+    padding: 10px;
+}
+
+.des3 {
+    grid-column: 2;
+    grid-row: 3;
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+    padding: 10px;
+}
+
+/* table  */
+
+.trips-table h2{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+
+}
+
+table {
+    width: 100%;    
+    margin: 20px 0;
+    border-spacing: 5px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+}
+
+th {
+    background-color: var(--accent1-color);
+    font-weight: bold;
+}
+
+/* colors every other line */
+tr:nth-child(even) {
+    background-color: var(--accent3-color);
+}
+
+tr:hover {
+    background-color: var(--accent2-color);
+}
